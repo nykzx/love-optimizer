@@ -74,10 +74,12 @@ body > img{
 
 .main-content{
     width: 40%;
-    height: 100vh;
+    height: 100%;
     display: flex;
+    position: fixed;
     flex-direction: column;
-    align-items: left;
+    object-fit: cover;
+    object-position: center;
     padding-left: 100px;
     justify-content: center;
     text-align: center;
@@ -98,6 +100,8 @@ body > img{
     font-size: smaller;
     color: var(--main-text-color);
     width: 50%;
+    height: fit-content;
+    margin-bottom: 10px;
     padding-bottom: 10px;
 }
 
