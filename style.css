@@ -6,6 +6,15 @@
     --main-bg-color: #212121;
     --main-text-color: #ffffff;
 }
+@media screen and (max-width: 576px) {
+    body{
+     display:none;
+    }
+
+    body {
+        display:block;
+       }
+}
 
 body{
     padding: 0;
@@ -76,7 +85,6 @@ body > img{
     width: 40%;
     height: 100%;
     display: flex;
-    position: fixed;
     flex-direction: column;
     object-fit: cover;
     object-position: center;
