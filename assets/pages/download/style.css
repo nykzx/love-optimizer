@@ -25,6 +25,10 @@ a{
     color: var(--main-text-color);
 }
 
+.promo-images{
+    width: 75% ;
+}
+
 .nav-bar{
     width: 100%;
     height: 40px
@@ -116,7 +120,7 @@ a{
     display: flex;
 }
 
-.basic{
+.basic{ 
     width: fit-content;
     height: fit-content;
     display: flex;

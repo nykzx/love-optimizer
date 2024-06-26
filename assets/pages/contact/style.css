@@ -1,0 +1,208 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* Root Variables */
+:root {
+    --main-color: #EF88F3;
+    --main-bg-color: #212121;
+    --second-bg-color: #303030;
+    --main-text-color: #ffffff;
+    --nykzx-color: #fe7ee6;
+    --boiola-color: #005D77;
+    --brighthammer-color: #8E7570;
+    --matheus-color: #1b1b1b;
+    --nykzx-bg-color: var(--main-bg-color);
+    --boiola-bg-color: var(--main-bg-color);
+    --brighthammer-bg-color: var(--main-bg-color);
+    --matheus-bg-color: var(--main-bg-color);
+}
+
+/* Global Styles */
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+.nav-bar {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+}
+
+.nav-bar > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.nav-bar > ul > li {
+    padding: 10px;
+    font-size: larger;
+}
+
+.nav-bar > ul > li > a {
+    color: var(--main-text-color);
+    transition: ease-in 0.2s;
+}
+
+.nav-bar > ul > li > a:hover {
+    color: var(--main-color);
+}
+
+.nav-bar > ul > a > img {
+    width: 35px;
+    padding: 5px;
+}
+
+/* Shared Styles */
+.instagram {
+    width: 42px;
+    height: 42px;
+    padding-bottom: 15px;
+}
+
+.instagram-m {
+    width: 42px;
+    height: 42px;
+}
+
+.youtube {
+    width: 56px;
+    height: 56px;
+    transform: translateY(-7px);
+    padding-left: 100px;
+}
+
+.subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    transform: translateY(-30px);
+}
+
+.icon {
+    border-radius: 1000px;
+    width: 150px;
+    height: 150px;
+}
+
+.icon-n {
+    border-radius: 1000px;
+    transform: translateY(20px);
+    width: 150px;
+    height: 150px;
+}
+
+.icons,
+.icons-n {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Individual Containers */
+.person-container {
+    position: relative;
+    width: 300px;
+    height: 70px;
+    background-color: var(--second-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 25px;
+    overflow: hidden; /* Hide overflow content */
+    transition: height 0.3s ease; /* Smooth transition for height change */
+    -webkit-box-shadow: 0px 10px 45px 0px rgba(0,0,0,0.40);
+    -moz-box-shadow: 0px 10px 45px 0px rgba(0, 0, 0, 0.40);
+    box-shadow: 0px 10px 45px 0px rgba(0,0,0,0.40);
+}
+
+.person-container:hover {
+    height: 500px; /* Expanded height on hover */
+}
+
+.person-container .nykzx-content,
+.person-container .boiola-content,
+.person-container .brighthammer-content,
+.person-container .matheus-content {
+    display: none; /* Initially hide the content */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--second-bg-color);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.person-container:hover .nykzx-content,
+.person-container:hover .boiola-content,
+.person-container:hover .brighthammer-content,
+.person-container:hover .matheus-content {
+    display: flex; /* Show content on hover */
+}
+
+/* Individual Colors */
+.n-color {
+    color: var(--nykzx-color);
+}
+
+.bo-color {
+    color: var(--boiola-color);
+}
+
+.br-color {
+    color: var(--brighthammer-color);
+}
+
+.m-color {
+    color: var(--matheus-color);
+}
+
+/* Marker Colors */
+.nykzx-container ul li::marker {
+    color: var(--nykzx-color);
+}
+
+.boiola-container ul li::marker {
+    color: var(--boiola-color);
+}
+
+.brighthammer-container ul li::marker {
+    color: var(--brighthammer-color);
+}
+
+.matheus-container ul li::marker {
+    color: var(--matheus-color);
+}
